@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+ 
+  color: transparent;
+  font-family: 'Inconsolata', monospace;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+* {
+  user-select: none;
+}
+
+.word {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url('./hand.png'),default;
+  margin: -20px 0 0 0px;
+  position: fixed;
+  z-index: 99999;
+
+
+  font-size: 30px;
+  color: #fd0404;
+}
+.highlighted {
+  font-weight: bold;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 1rem;
+}
+.container {
+  height: 140vh;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url('./hand.png'),default;
+  margin: -20px 0 0 -20px;
+ 
+
+}

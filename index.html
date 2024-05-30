@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRESS BUSTER🥊</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+</head>
+<body background="boxing ring.jpg">
+    <main>
+        <div class="container"></div>
+        <div class="text">mama relatives MAMA Relatives MAMA RELATIVES HATERS FAKEFRIENDS DEPRESSION SADNESS PRINCIPAL PAIN TRAUMA MAMA TENSION PROBLEMS GHOST ANXIETY STRESS </div>
+        
+    </main>
+       
+       <script>
+        const audio=new Audio();
+        audio.src="boxing.mp3";
+        const body = document.querySelector('body')
+body.addEventListener('mousemove', (event) => {
+  audio.play();
+  const eyes = document.querySelectorAll('.eye-black')
+  
+  eyes.forEach(eye => {
+    const x = eye.getBoundingClientRect().left + eye.clientWidth / 2
+    const y = eye.getBoundingClientRect().top + eye.clientHeight / 2
+    const rotate = radian * (180 / Math.PI) * -1
+
+    eye.style.transform = `rotate(${rotate}deg)`
+
+  })
+})
+       </script>
+</body>
+</html>
